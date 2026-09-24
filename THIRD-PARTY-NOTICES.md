@@ -1,0 +1,239 @@
+# Third-Party Notices — VoxelCraft
+
+This file lists the third-party Rust crates used by **VoxelCraft** (© 2026).
+
+VoxelCraft is licensed under the MIT License.
+
+The dependency and license information below is generated from the Cargo
+dependency graph using `cargo-about`.
+
+## License Summary
+
+- **Apache License 2.0** — 151 crate(s)
+- **MIT License** — 56 crate(s)
+- **BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License** — 2 crate(s)
+- **BSD 2-Clause &quot;Simplified&quot; License** — 1 crate(s)
+- **ISC License** — 1 crate(s)
+- **Unicode License v3** — 1 crate(s)
+
+## Dependencies
+
+- **simdutf8 0.1.5** — Apache License 2.0 — https://github.com/rusticstuff/simdutf8
+- **pin-project 1.1.13** — Apache License 2.0 — https://github.com/taiki-e/pin-project
+- **raw-window-handle 0.6.2** — Apache License 2.0 — https://github.com/rust-windowing/raw-window-handle
+- **xkeysym 0.2.1** — Apache License 2.0 — https://github.com/notgull/xkeysym
+- **cursor-icon 1.2.0** — Apache License 2.0 — https://github.com/rust-windowing/cursor-icon
+- **ttf-parser 0.25.1** — Apache License 2.0 — https://github.com/harfbuzz/ttf-parser
+- **as-raw-xcb-connection 1.0.1** — Apache License 2.0 — https://github.com/psychon/as-raw-xcb-connection
+- **x11rb-protocol 0.13.2** — Apache License 2.0 — https://github.com/psychon/x11rb
+- **x11rb 0.13.2** — Apache License 2.0 — https://github.com/psychon/x11rb
+- **linux-raw-sys 0.12.1** — Apache License 2.0 — https://github.com/sunfishcode/linux-raw-sys
+- **linux-raw-sys 0.4.15** — Apache License 2.0 — https://github.com/sunfishcode/linux-raw-sys
+- **rustix 0.38.44** — Apache License 2.0 — https://github.com/bytecodealliance/rustix
+- **rustix 1.1.4** — Apache License 2.0 — https://github.com/bytecodealliance/rustix
+- **wasip2 1.0.4+wasi-0.2.12** — Apache License 2.0 — https://github.com/bytecodealliance/wasi-rs
+- **wit-bindgen 0.57.1** — Apache License 2.0 — https://github.com/bytecodealliance/wit-bindgen
+- **raw-window-metal 0.4.0** — Apache License 2.0 — https://github.com/norse-rs/raw-window-metal
+- **owned_ttf_parser 0.25.1** — Apache License 2.0 — https://github.com/alexheretic/owned-ttf-parser
+- **windows-link 0.2.1** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows-sys 0.52.0** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows-sys 0.59.0** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows-sys 0.61.2** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows-targets 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_aarch64_gnullvm 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_aarch64_msvc 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_i686_gnu 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_i686_gnullvm 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_i686_msvc 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_x86_64_gnu 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_x86_64_gnullvm 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **windows_x86_64_msvc 0.52.6** — Apache License 2.0 — https://github.com/microsoft/windows-rs
+- **zerocopy 0.8.56** — Apache License 2.0 — https://github.com/google/zerocopy
+- **web-time 1.1.0** — Apache License 2.0 — https://github.com/daxpedda/web-time
+- **anstream 1.0.0** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **anstyle-parse 1.0.0** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **anstyle-query 1.1.5** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **anstyle-wincon 3.0.11** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **anstyle 1.0.14** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **colorchoice 1.0.5** — Apache License 2.0 — https://github.com/rust-cli/anstyle.git
+- **env_filter 2.0.0** — Apache License 2.0 — https://github.com/rust-cli/env_logger
+- **env_logger 0.11.11** — Apache License 2.0 — https://github.com/rust-cli/env_logger
+- **foreign-types-macros 0.2.4** — Apache License 2.0 — https://github.com/sfackler/foreign-types
+- **foreign-types-shared 0.3.1** — Apache License 2.0 — https://github.com/sfackler/foreign-types
+- **foreign-types 0.5.0** — Apache License 2.0 — https://github.com/sfackler/foreign-types
+- **is_terminal_polyfill 1.70.2** — Apache License 2.0 — https://github.com/polyfill-rs/is_terminal_polyfill
+- **jni-sys 0.3.1** — Apache License 2.0 — https://github.com/jni-rs/jni-sys
+- **jni-sys 0.4.1** — Apache License 2.0 — https://github.com/jni-rs/jni-sys
+- **once_cell_polyfill 1.70.2** — Apache License 2.0 — https://github.com/polyfill-rs/once_cell_polyfill
+- **toml_datetime 1.1.1+spec-1.1.0** — Apache License 2.0 — https://github.com/toml-rs/toml
+- **toml_edit 0.25.13+spec-1.1.0** — Apache License 2.0 — https://github.com/toml-rs/toml
+- **toml_parser 1.1.3+spec-1.1.0** — Apache License 2.0 — https://github.com/toml-rs/toml
+- **libc 0.2.189** — Apache License 2.0 — https://github.com/rust-lang/libc
+- **num_enum 0.7.6** — Apache License 2.0 — https://github.com/illicitonion/num_enum
+- **num_enum_derive 0.7.6** — Apache License 2.0 — https://github.com/illicitonion/num_enum
+- **quote 1.0.47** — Apache License 2.0 — https://github.com/dtolnay/quote
+- **rustversion 1.0.23** — Apache License 2.0 — https://github.com/dtolnay/rustversion
+- **semver 1.0.28** — Apache License 2.0 — https://github.com/dtolnay/semver
+- **thiserror-impl 1.0.69** — Apache License 2.0 — https://github.com/dtolnay/thiserror
+- **thiserror 1.0.69** — Apache License 2.0 — https://github.com/dtolnay/thiserror
+- **unicode-ident 1.0.24** — Apache License 2.0 — https://github.com/dtolnay/unicode-ident
+- **utf8parse 0.2.2** — Apache License 2.0 — https://github.com/alacritty/vte
+- **futures-core 0.3.34** — Apache License 2.0 — https://github.com/rust-lang/futures-rs
+- **futures-task 0.3.34** — Apache License 2.0 — https://github.com/rust-lang/futures-rs
+- **futures-util 0.3.34** — Apache License 2.0 — https://github.com/rust-lang/futures-rs
+- **glam 0.29.3** — Apache License 2.0 — https://github.com/bitshifter/glam-rs
+- **memmap2 0.9.11** — Apache License 2.0 — https://github.com/RazrFalcon/memmap2-rs
+- **ahash 0.8.12** — Apache License 2.0 — https://github.com/tkaitchuck/ahash
+- **arrayvec 0.7.8** — Apache License 2.0 — https://github.com/bluss/arrayvec
+- **atomic-waker 1.1.2** — Apache License 2.0 — https://github.com/smol-rs/atomic-waker
+- **bitflags 1.3.2** — Apache License 2.0 — https://github.com/bitflags/bitflags
+- **bitflags 2.13.1** — Apache License 2.0 — https://github.com/bitflags/bitflags
+- **bumpalo 3.20.3** — Apache License 2.0 — https://github.com/fitzgen/bumpalo
+- **cc 1.4.4** — Apache License 2.0 — https://github.com/rust-lang/cc-rs
+- **cfg-if 1.0.4** — Apache License 2.0 — https://github.com/rust-lang/cfg-if
+- **cocoa-foundation 0.1.2** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **cocoa 0.25.0** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **concurrent-queue 2.5.0** — Apache License 2.0 — https://github.com/smol-rs/concurrent-queue
+- **core-foundation-sys 0.8.7** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **core-foundation 0.9.4** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **core-graphics-types 0.1.3** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **core-graphics 0.23.2** — Apache License 2.0 — https://github.com/servo/core-foundation-rs
+- **crossbeam-utils 0.8.22** — Apache License 2.0 — https://github.com/crossbeam-rs/crossbeam
+- **equivalent 1.0.2** — Apache License 2.0 — https://github.com/indexmap-rs/equivalent
+- **errno 0.3.14** — Apache License 2.0 — https://github.com/lambda-fairy/rust-errno
+- **find-msvc-tools 0.1.11** — Apache License 2.0 — https://github.com/rust-lang/cc-rs
+- **gethostname 1.1.0** — Apache License 2.0 — https://codeberg.org/swsnr/gethostname.rs.git
+- **hashbrown 0.17.1** — Apache License 2.0 — https://github.com/rust-lang/hashbrown
+- **hermit-abi 0.5.3** — Apache License 2.0 — https://github.com/hermit-os/hermit-rs
+- **indexmap 2.14.1** — Apache License 2.0 — https://github.com/indexmap-rs/indexmap
+- **jobserver 0.1.35** — Apache License 2.0 — https://github.com/rust-lang/jobserver-rs
+- **js-sys 0.3.104** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/js-sys
+- **linux-raw-sys 0.12.1** — Apache License 2.0 — https://github.com/sunfishcode/linux-raw-sys
+- **linux-raw-sys 0.4.15** — Apache License 2.0 — https://github.com/sunfishcode/linux-raw-sys
+- **log 0.4.34** — Apache License 2.0 — https://github.com/rust-lang/log
+- **once_cell 1.21.4** — Apache License 2.0 — https://github.com/matklad/once_cell
+- **percent-encoding 2.3.2** — Apache License 2.0 — https://github.com/servo/rust-url/
+- **pkg-config 0.3.34** — Apache License 2.0 — https://github.com/rust-lang/pkg-config-rs
+- **plain 0.2.3** — Apache License 2.0 — https://github.com/randomites/plain
+- **polling 3.11.0** — Apache License 2.0 — https://github.com/smol-rs/polling
+- **regex-automata 0.4.18** — Apache License 2.0 — https://github.com/rust-lang/regex
+- **regex-syntax 0.8.11** — Apache License 2.0 — https://github.com/rust-lang/regex
+- **regex 1.13.1** — Apache License 2.0 — https://github.com/rust-lang/regex
+- **rustc_version 0.4.1** — Apache License 2.0 — https://github.com/djc/rustc-version-rs
+- **rustix 0.38.44** — Apache License 2.0 — https://github.com/bytecodealliance/rustix
+- **rustix 1.1.4** — Apache License 2.0 — https://github.com/bytecodealliance/rustix
+- **scoped-tls 1.0.1** — Apache License 2.0 — https://github.com/alexcrichton/scoped-tls
+- **simd_cesu8 1.2.0** — Apache License 2.0 — https://github.com/seancroach/simd_cesu8
+- **smallvec 1.16.0** — Apache License 2.0 — https://github.com/servo/rust-smallvec
+- **smol_str 0.2.2** — Apache License 2.0 — https://github.com/rust-analyzer/smol_str
+- **ttf-parser 0.25.1** — Apache License 2.0 — https://github.com/harfbuzz/ttf-parser
+- **unicode-segmentation 1.13.3** — Apache License 2.0 — https://github.com/unicode-rs/unicode-segmentation
+- **version_check 0.9.5** — Apache License 2.0 — https://github.com/SergioBenitez/version_check
+- **wasip2 1.0.4+wasi-0.2.12** — Apache License 2.0 — https://github.com/bytecodealliance/wasi-rs
+- **wasm-bindgen-futures 0.4.77** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/futures
+- **wasm-bindgen-macro-support 0.2.127** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro-support
+- **wasm-bindgen-macro 0.2.127** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro
+- **wasm-bindgen-shared 0.2.127** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/shared
+- **wasm-bindgen 0.2.127** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen
+- **web-sys 0.3.104** — Apache License 2.0 — https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/web-sys
+- **wit-bindgen 0.57.1** — Apache License 2.0 — https://github.com/bytecodealliance/wit-bindgen
+- **downcast-rs 1.2.1** — Apache License 2.0 — https://github.com/marcianx/downcast-rs
+- **getrandom 0.3.4** — Apache License 2.0 — https://github.com/rust-random/getrandom
+- **getrandom 0.4.3** — Apache License 2.0 — https://github.com/rust-random/getrandom
+- **proc-macro-crate 3.5.0** — Apache License 2.0 — https://github.com/bkchr/proc-macro-crate
+- **ash-window 0.13.0** — Apache License 2.0 — https://github.com/ash-rs/ash
+- **ash 0.38.0+1.3.281** — Apache License 2.0 — https://github.com/ash-rs/ash
+- **dpi 0.1.2** — Apache License 2.0 — https://github.com/rust-windowing/winit
+- **winit 0.30.13** — Apache License 2.0 — https://github.com/rust-windowing/winit
+- **bytemuck 1.25.2** — Apache License 2.0 — https://github.com/Lokathor/bytemuck
+- **bytemuck_derive 1.12.0** — Apache License 2.0 — https://github.com/Lokathor/bytemuck
+- **ab_glyph 0.2.32** — Apache License 2.0 — https://github.com/alexheretic/ab-glyph
+- **ab_glyph_rasterizer 0.1.10** — Apache License 2.0 — https://github.com/alexheretic/ab-glyph
+- **android-activity 0.6.1** — Apache License 2.0 — https://github.com/rust-mobile/android-activity
+- **jni-macros 0.22.4** — Apache License 2.0 — https://github.com/jni-rs/jni-rs
+- **jni-sys-macros 0.4.1** — Apache License 2.0 — https://github.com/jni-rs/jni-sys
+- **jni 0.22.4** — Apache License 2.0 — https://github.com/jni-rs/jni-rs
+- **ndk-context 0.1.1** — Apache License 2.0 — https://github.com/rust-windowing/android-ndk-rs
+- **ndk-sys 0.6.0+11769913** — Apache License 2.0 — https://github.com/rust-mobile/ndk
+- **ndk 0.9.0** — Apache License 2.0 — https://github.com/rust-mobile/ndk
+- **pin-project-internal 1.1.13** — Apache License 2.0 — https://github.com/taiki-e/pin-project
+- **pin-project-lite 0.2.17** — Apache License 2.0 — https://github.com/taiki-e/pin-project-lite
+- **portable-atomic-util 0.2.7** — Apache License 2.0 — https://github.com/taiki-e/portable-atomic-util
+- **portable-atomic 1.15.0** — Apache License 2.0 — https://github.com/taiki-e/portable-atomic
+- **proc-macro2 1.0.107** — Apache License 2.0 — https://github.com/dtolnay/proc-macro2
+- **r-efi 5.3.0** — Apache License 2.0 — https://github.com/r-efi/r-efi
+- **r-efi 6.0.0** — Apache License 2.0 — https://github.com/r-efi/r-efi
+- **syn 2.0.119** — Apache License 2.0 — https://github.com/dtolnay/syn
+- **syn 3.0.4** — Apache License 2.0 — https://github.com/dtolnay/syn
+- **thiserror-impl 2.0.20** — Apache License 2.0 — https://github.com/dtolnay/thiserror
+- **thiserror 2.0.20** — Apache License 2.0 — https://github.com/dtolnay/thiserror
+- **shlex 2.0.1** — Apache License 2.0 — https://github.com/comex/rust-shlex
+- **unicode-segmentation 1.13.3** — Apache License 2.0 — https://github.com/unicode-rs/unicode-segmentation
+- **arrayref 0.3.9** — BSD 2-Clause &quot;Simplified&quot; License — https://github.com/droundy/arrayref
+- **tiny-skia-path 0.11.4** — BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License — https://github.com/RazrFalcon/tiny-skia/tree/master/path
+- **tiny-skia 0.11.4** — BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License — https://github.com/RazrFalcon/tiny-skia
+- **libloading 0.8.9** — ISC License — https://github.com/nagisa/rust_libloading/
+- **wayland-backend 0.3.17** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-client 0.31.15** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-cursor 0.31.14** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-protocols-plasma 0.3.12** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-protocols-wlr 0.3.12** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-protocols 0.32.13** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-scanner 0.31.11** — MIT License — https://github.com/smithay/wayland-rs
+- **wayland-sys 0.31.11** — MIT License — https://github.com/smithay/wayland-rs
+- **dlib 0.5.3** — MIT License — https://github.com/elinorbgr/dlib
+- **redox_syscall 0.4.1** — MIT License — https://gitlab.redox-os.org/redox-os/syscall
+- **bytes 1.12.1** — MIT License — https://github.com/tokio-rs/bytes
+- **smithay-client-toolkit 0.19.2** — MIT License — https://github.com/smithay/client-toolkit
+- **calloop 0.13.0** — MIT License — https://github.com/Smithay/calloop
+- **slab 0.4.12** — MIT License — https://github.com/tokio-rs/slab
+- **tracing-core 0.1.36** — MIT License — https://github.com/tokio-rs/tracing
+- **tracing 0.1.44** — MIT License — https://github.com/tokio-rs/tracing
+- **strict-num 0.1.1** — MIT License — https://github.com/RazrFalcon/strict-num
+- **calloop-wayland-source 0.3.0** — MIT License — https://github.com/smithay/calloop-wayland-source
+- **wayland-csd-frame 0.3.0** — MIT License — https://github.com/rust-windowing/wayland-csd-frame
+- **cfg_aliases 0.2.2** — MIT License — https://github.com/katharostech/cfg_aliases
+- **android-properties 0.2.2** — MIT License — https://github.com/miklelappo/android-properties
+- **xcursor 0.3.11** — MIT License — https://github.com/esposm03/xcursor-rs
+- **sctk-adwaita 0.10.1** — MIT License — https://github.com/PolyMeilex/sctk-adwaita
+- **libredox 0.1.23** — MIT License — https://gitlab.redox-os.org/redox-os/libredox.git
+- **voxelcraft 0.2.0** — MIT License — https://github.com/OWNER/voxelcraft
+- **block2 0.5.1** — MIT License — https://github.com/madsmtm/objc2
+- **block 0.1.6** — MIT License — http://github.com/SSheldon/rust-block
+- **dispatch 0.2.0** — MIT License — http://github.com/SSheldon/rust-dispatch
+- **dpi 0.1.2** — MIT License — https://github.com/rust-windowing/winit
+- **malloc_buf 0.0.6** — MIT License — https://github.com/SSheldon/malloc_buf
+- **objc-sys 0.3.5** — MIT License — https://github.com/madsmtm/objc2
+- **objc2-app-kit 0.2.2** — MIT License — https://github.com/madsmtm/objc2
+- **objc2-encode 4.1.0** — MIT License — https://github.com/madsmtm/objc2
+- **objc2-foundation 0.2.2** — MIT License — https://github.com/madsmtm/objc2
+- **objc2-ui-kit 0.2.2** — MIT License — https://github.com/madsmtm/objc2
+- **objc2 0.5.2** — MIT License — https://github.com/madsmtm/objc2
+- **objc 0.2.7** — MIT License — http://github.com/SSheldon/rust-objc
+- **wayland-protocols-plasma 0.3.12** — MIT License — https://github.com/smithay/wayland-rs
+- **x11-dl 2.21.0** — MIT License — https://github.com/AltF02/x11-rs.git
+- **winnow 1.0.4** — MIT License — https://github.com/winnow-rs/winnow
+- **tracing-core 0.1.36** — MIT License — https://github.com/tokio-rs/tracing
+- **aho-corasick 1.1.5** — MIT License — https://github.com/BurntSushi/aho-corasick
+- **jiff-core 0.1.0** — MIT License — https://github.com/BurntSushi/jiff
+- **jiff 0.2.35** — MIT License — https://github.com/BurntSushi/jiff
+- **memchr 2.8.3** — MIT License — https://github.com/BurntSushi/memchr
+- **walkdir 2.5.0** — MIT License — https://github.com/BurntSushi/walkdir
+- **combine 4.6.8** — MIT License — https://github.com/Marwes/combine
+- **orbclient 0.3.55** — MIT License — https://gitlab.redox-os.org/redox-os/orbclient
+- **same-file 1.0.6** — MIT License — https://github.com/BurntSushi/same-file
+- **winapi-util 0.1.11** — MIT License — https://github.com/BurntSushi/winapi-util
+- **xkbcommon-dl 0.4.2** — MIT License — https://github.com/rust-windowing/xkbcommon-dl
+- **quick-xml 0.41.0** — MIT License — https://github.com/tafia/quick-xml
+- **memchr 2.8.3** — MIT License — https://github.com/BurntSushi/memchr
+- **same-file 1.0.6** — MIT License — https://github.com/BurntSushi/same-file
+- **walkdir 2.5.0** — MIT License — https://github.com/BurntSushi/walkdir
+- **winapi-util 0.1.11** — MIT License — https://github.com/BurntSushi/winapi-util
+- **unicode-ident 1.0.24** — Unicode License v3 — https://github.com/dtolnay/unicode-ident
+
+## Notes
+
+- License information is generated from the Cargo dependency graph.
+- Each dependency remains licensed under its respective upstream license.
+- VoxelCraft's MIT license applies to VoxelCraft itself, not to its third-party dependencies.
+- Some dependencies use compound SPDX license expressions.

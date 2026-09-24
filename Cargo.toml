@@ -1,0 +1,24 @@
+[package]
+name = "voxelcraft"
+version = "0.2.0"
+edition = "2021"
+description = "Minecraft-like voxel engine in Rust on raw Vulkan (ash): procedural terrain, caves, lakes, crafting, day/night, synthesized audio"
+license = "MIT"
+repository = "https://github.com/OWNER/voxelcraft" # TODO: set to your real repo URL before publishing
+keywords = ["voxel", "vulkan", "minecraft", "game", "procedural"]
+categories = ["games"]
+
+[dependencies]
+ash = { version = "0.38", features = ["linked"] }
+ash-window = "0.13"
+winit = "0.30"
+glam = { version = "0.29", features = ["bytemuck"] }
+bytemuck = { version = "1", features = ["derive"] }
+log = "0.4"
+env_logger = "0.11"
+
+# Sound links libasound directly via #[link(name = "asound")] in
+# src/sound.rs — no crate needed, libasound.so.2 ships with every Linux desktop.
+
+[profile.dev]
+opt-level = 1

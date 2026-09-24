@@ -1,0 +1,12 @@
+# Rust / Cargo
+/target
+
+# Local run logs and tooling state (not part of the project)
+.freebuff/*.log
+.freebuff/desktop-v2.db
+.freebuff/project-id
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp

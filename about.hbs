@@ -1,0 +1,29 @@
+# Third-Party Notices — VoxelCraft
+
+This file lists the third-party Rust crates used by **VoxelCraft** (© 2026).
+
+VoxelCraft is licensed under the MIT License.
+
+The dependency and license information below is generated from the Cargo
+dependency graph using `cargo-about`.
+
+## License Summary
+
+{{#each overview}}
+- **{{name}}** — {{count}} crate(s)
+{{/each}}
+
+## Dependencies
+
+{{#each licenses}}
+{{#each used_by}}
+- **{{crate.name}} {{crate.version}}** — {{../name}}{{#if crate.repository}} — {{crate.repository}}{{/if}}
+{{/each}}
+{{/each}}
+
+## Notes
+
+- License information is generated from the Cargo dependency graph.
+- Each dependency remains licensed under its respective upstream license.
+- VoxelCraft's MIT license applies to VoxelCraft itself, not to its third-party dependencies.
+- Some dependencies use compound SPDX license expressions.
