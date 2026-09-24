@@ -4,7 +4,7 @@ version = "0.2.0"
 edition = "2021"
 description = "Minecraft-like voxel engine in Rust on raw Vulkan (ash): procedural terrain, caves, lakes, crafting, day/night, synthesized audio"
 license = "MIT"
-repository = "https://github.com/OWNER/voxelcraft" # TODO: set to your real repo URL before publishing
+repository = "https://github.com/CBBIV3505/VoxelCraft" # TODO: set to your real repo URL before publishing
 keywords = ["voxel", "vulkan", "minecraft", "game", "procedural"]
 categories = ["games"]
 
