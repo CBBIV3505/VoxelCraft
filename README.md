@@ -1,6 +1,6 @@
 # VoxelCraft
 
-A Minecraft-like voxel engine written in Rust on raw Vulkan (via `ash`) — no
+A FULLY AI GENERATED voxel engine written in Rust on raw Vulkan (via `ash`) — no
 game engine, no rendering framework. Procedural terrain, day/night cycle,
 mining/building, crafting, swimming, and synthesized audio.
 
@@ -74,11 +74,10 @@ compiled into the binary — the startup log line and window title show it.
 
 ## License
 
-VoxelCraft is licensed under the [PolyForm Noncommercial
-1.0.0](https://polyformnoncommercial.org/polyform-noncommercial/1.0.0/) —
-free to use, modify, and share for noncommercial purposes. Third-party
-software and system-library notices are documented in
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+VoxelCraft is licensed under the [MIT License](LICENSE) — free to use,
+modify, and share, including for commercial purposes. Third-party software
+and system-library notices are documented in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
 
 ## Contributing
 
