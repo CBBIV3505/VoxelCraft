@@ -3,7 +3,7 @@
 All notable changes to VoxelCraft. Versions follow MAJOR.MINOR.PATCH
 (see README.md for the policy).
 
-## [0.2.0] — Water, swimming, and sound (unreleased)
+## [0.1.0] — First playable
 
 ### Added
 - **Lakes**: terrain below sea level (y=11) fills with translucent water —
@@ -23,8 +23,7 @@ All notable changes to VoxelCraft. Versions follow MAJOR.MINOR.PATCH
   debug assert. The slice is now 8192 vertices with a runtime clamp + warning
   as a release-mode safety net.
 
-## [0.1.0] — First playable
-
+### Basically the game
 - Raw-Vulkan renderer (ash): shadow mapping with PCF, procedural 16×16
   block-texture atlas with keyed leaf transparency, sky dome + sun/moon
   discs, day/night cycle, distance fog matched to the sky palette.
