@@ -1,0 +1,181 @@
+name: Build VoxelCraft
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build ${{ matrix.platform }}
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux-x86_64
+            binary: voxelcraft
+
+          - os: windows-latest
+            platform: windows-x86_64
+            binary: voxelcraft.exe
+
+          - os: macos-latest
+            platform: macos
+            binary: voxelcraft
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      # -------------------------
+      # Linux dependencies
+      # -------------------------
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libvulkan-dev \
+            libasound2-dev \
+            libx11-dev \
+            libxkbcommon-dev \
+            libwayland-dev \
+            glslc
+
+      # -------------------------
+      # Windows Vulkan SDK
+      # -------------------------
+      - name: Install Vulkan SDK
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          choco install vulkan-sdk -y --no-progress
+
+      # -------------------------
+      # macOS Vulkan tools
+      # -------------------------
+      - name: Install macOS Vulkan tools
+        if: runner.os == 'macOS'
+        run: |
+          brew update
+          brew install molten-vk shaderc
+
+      # -------------------------
+      # Build
+      # -------------------------
+      - name: Build release
+        run: cargo build --release
+
+      # -------------------------
+      # Package Linux/macOS
+      # -------------------------
+      - name: Package Unix build
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          set -e
+
+          PACKAGE_DIR="VoxelCraft-${GITHUB_REF_NAME}-${{ matrix.platform }}"
+
+          mkdir -p "package/${PACKAGE_DIR}"
+
+          cp "target/release/${{ matrix.binary }}" \
+            "package/${PACKAGE_DIR}/"
+
+          if [ -f LICENSE ]; then
+            cp LICENSE "package/${PACKAGE_DIR}/"
+          fi
+
+          if [ -f README.md ]; then
+            cp README.md "package/${PACKAGE_DIR}/"
+          fi
+
+          if [ -f THIRD-PARTY-NOTICES.md ]; then
+            cp THIRD-PARTY-NOTICES.md "package/${PACKAGE_DIR}/"
+          fi
+
+          tar -czf \
+            "${PACKAGE_DIR}.tar.gz" \
+            -C package \
+            "${PACKAGE_DIR}"
+
+      # -------------------------
+      # Package Windows
+      # -------------------------
+      - name: Package Windows build
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $packageDir = "VoxelCraft-${env:GITHUB_REF_NAME}-${{ matrix.platform }}"
+          $packagePath = "package/$packageDir"
+
+          New-Item -ItemType Directory -Force -Path $packagePath | Out-Null
+
+          Copy-Item `
+            "target/release/${{ matrix.binary }}" `
+            "$packagePath/"
+
+          if (Test-Path "LICENSE") {
+            Copy-Item LICENSE "$packagePath/"
+          }
+
+          if (Test-Path "README.md") {
+            Copy-Item README.md "$packagePath/"
+          }
+
+          if (Test-Path "THIRD-PARTY-NOTICES.md") {
+            Copy-Item THIRD-PARTY-NOTICES.md "$packagePath/"
+          }
+
+          Compress-Archive `
+            -Path "$packagePath/*" `
+            -DestinationPath "$packageDir.zip"
+
+      # -------------------------
+      # Save build artifact
+      # -------------------------
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VoxelCraft-${{ github.ref_name }}-${{ matrix.platform }}
+          path: |
+            *.tar.gz
+            *.zip
+
+  # =================================
+  # CREATE GITHUB RELEASE
+  # =================================
+  release:
+    name: Create GitHub Release
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download all builds
+        uses: actions/download-artifact@v5
+        with:
+          path: release-assets
+          pattern: VoxelCraft-*
+          merge-multiple: true
+
+      - name: Create release and upload builds
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ github.ref_name }}" \
+            release-assets/* \
+            --title "VoxelCraft ${{
+              github.ref_name
+            }}" \
+            --generate-notes
